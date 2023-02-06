@@ -10,6 +10,12 @@ import UIKit
 
 class Model : ObservableObject {
     
+    @Published var firstShake:Bool {
+        didSet {
+            UserDefaults.standard.set(firstShake, forKey: "firstShake")
+        }
+    }
+    
     var firstInsults:[Insult]
     var secondInsults:[Insult]
     var thirdInsults:[Insult]
@@ -34,6 +40,8 @@ class Model : ObservableObject {
     var context:[String]
     
     init(){
+        
+        self.firstShake = false//UserDefaults.standard.object(forKey: "firstShake") as? Bool ?? false
         
         //https://www.litcharts.com/blog/shakespeare/top-shakespeare-insults-of-all-time/
         

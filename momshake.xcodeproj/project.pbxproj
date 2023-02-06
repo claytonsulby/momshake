@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6F0DE59626E97B1800E43FF4 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0DE59526E97B1800E43FF4 /* SwiftUIX */; };
-		6F2D063B273C2876003CE3E3 /* Zainer-GoticoAntiqua96G.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2D063A273C2876003CE3E3 /* Zainer-GoticoAntiqua96G.otf */; };
 		6F2FAF2B257AA2D000E32A02 /* momshakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FAF2A257AA2D000E32A02 /* momshakeApp.swift */; };
 		6F2FAF2D257AA2D000E32A02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FAF2C257AA2D000E32A02 /* ContentView.swift */; };
 		6F2FAF2F257AA2D200E32A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2FAF2E257AA2D200E32A02 /* Assets.xcassets */; };
@@ -18,6 +17,10 @@
 		6F2FAF59257AA36D00E32A02 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FAF58257AA36D00E32A02 /* Model.swift */; };
 		6F2FAF5E257ABD3600E32A02 /* Insult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FAF5D257ABD3600E32A02 /* Insult.swift */; };
 		6F2FAF95257B316A00E32A02 /* UIWindow+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FAF94257B316A00E32A02 /* UIWindow+Shake.swift */; };
+		6F468149298B2C7D00783E42 /* secretaryhandmodern.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F468148298B2C7D00783E42 /* secretaryhandmodern.ttf */; };
+		6F46814B298B2D9800783E42 /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F46814A298B2D9800783E42 /* Font+Custom.swift */; };
+		6F46814D298B43B400783E42 /* MainOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F46814C298B43B400783E42 /* MainOverlay.swift */; };
+		6F4681512990AF8100783E42 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4681502990AF8100783E42 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F2D063A273C2876003CE3E3 /* Zainer-GoticoAntiqua96G.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zainer-GoticoAntiqua96G.otf"; sourceTree = "<group>"; };
 		6F2FAF27257AA2D000E32A02 /* momshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2FAF2A257AA2D000E32A02 /* momshakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momshakeApp.swift; sourceTree = "<group>"; };
 		6F2FAF2C257AA2D000E32A02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,10 @@
 		6F2FAF58257AA36D00E32A02 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6F2FAF5D257ABD3600E32A02 /* Insult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insult.swift; sourceTree = "<group>"; };
 		6F2FAF94257B316A00E32A02 /* UIWindow+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Shake.swift"; sourceTree = "<group>"; };
+		6F468148298B2C7D00783E42 /* secretaryhandmodern.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = secretaryhandmodern.ttf; sourceTree = "<group>"; };
+		6F46814A298B2D9800783E42 /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
+		6F46814C298B43B400783E42 /* MainOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOverlay.swift; sourceTree = "<group>"; };
+		6F4681502990AF8100783E42 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +111,18 @@
 		6F2FAF29257AA2D000E32A02 /* momshake */ = {
 			isa = PBXGroup;
 			children = (
-				6F2D063A273C2876003CE3E3 /* Zainer-GoticoAntiqua96G.otf */,
 				6F2FAF2A257AA2D000E32A02 /* momshakeApp.swift */,
+				6F46814C298B43B400783E42 /* MainOverlay.swift */,
 				6F2FAF2C257AA2D000E32A02 /* ContentView.swift */,
 				6F2FAF58257AA36D00E32A02 /* Model.swift */,
 				6F2FAF5D257ABD3600E32A02 /* Insult.swift */,
 				6F2FAF94257B316A00E32A02 /* UIWindow+Shake.swift */,
 				6F2FAF2E257AA2D200E32A02 /* Assets.xcassets */,
 				6F2FAF33257AA2D200E32A02 /* Info.plist */,
+				6F468148298B2C7D00783E42 /* secretaryhandmodern.ttf */,
 				6F2FAF30257AA2D200E32A02 /* Preview Content */,
+				6F46814A298B2D9800783E42 /* Font+Custom.swift */,
+				6F4681502990AF8100783E42 /* Onboarding.swift */,
 			);
 			path = momshake;
 			sourceTree = "<group>";
@@ -254,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2FAF32257AA2D200E32A02 /* Preview Assets.xcassets in Resources */,
-				6F2D063B273C2876003CE3E3 /* Zainer-GoticoAntiqua96G.otf in Resources */,
+				6F468149298B2C7D00783E42 /* secretaryhandmodern.ttf in Resources */,
 				6F2FAF2F257AA2D200E32A02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2FAF59257AA36D00E32A02 /* Model.swift in Sources */,
+				6F46814D298B43B400783E42 /* MainOverlay.swift in Sources */,
+				6F46814B298B2D9800783E42 /* Font+Custom.swift in Sources */,
 				6F2FAF2D257AA2D000E32A02 /* ContentView.swift in Sources */,
 				6F2FAF5E257ABD3600E32A02 /* Insult.swift in Sources */,
 				6F2FAF2B257AA2D000E32A02 /* momshakeApp.swift in Sources */,
+				6F4681512990AF8100783E42 /* Onboarding.swift in Sources */,
 				6F2FAF95257B316A00E32A02 /* UIWindow+Shake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,16 +453,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"momshake/Preview Content\"";
 				DEVELOPMENT_TEAM = KUV9DN7K8X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = momshake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shake;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.momshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -463,16 +480,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"momshake/Preview Content\"";
 				DEVELOPMENT_TEAM = KUV9DN7K8X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = momshake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shake;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.momshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -37,9 +37,10 @@ struct ContentView: View {
             }
             .navigationTitle("Thou art a...")
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-                
+                model.firstShake = true
                 randomize()
-                
+                haptic()
+                showOverlay()
             }
         }
     }
@@ -56,18 +57,17 @@ extension ContentView {
             }
         }
     }
-    
 }
 
 // Supplementary Views
 extension ContentView {
-    
+
     func toolbar() -> some View {
         VStack(spacing: 10.0){
             
             Divider()
             
-            HStack(alignment: .bottom, spacing: 20) {
+            HStack(alignment: .bottom, spacing: 0) {
                 composeSidebar()
                 composeField()
             }
@@ -91,8 +91,11 @@ extension ContentView {
             if (showComposeSidebar) {
                 Button(action: {
                     randomize()
+                    haptic()
                 }) {
                     Image(systemName: "shuffle")
+                        .padding(.trailing)
+                        .padding(.vertical, 5)
                 }
                 .transition(.move(edge: .leading).combined(with: .opacity))
             } else {
@@ -104,11 +107,14 @@ extension ContentView {
                     Image(systemName: "chevron.forward.square.fill")
                         .imageScale(.large)
                         .foregroundColor(.secondary)
+                        .padding(.trailing)
+                        .padding(.vertical, 5)
                     
                 }
                 .transition(.asymmetric(insertion: .opacity.combined(with: .scale), removal: .move(edge: .trailing).combined(with: .opacity)))
             }
-        }.padding(.bottom, 5)
+        }
+        .padding(.bottom, 5)
 
     }
     
@@ -174,11 +180,18 @@ extension ContentView {
     
     
     func randomize() {
-        
         firstSelection = (0..<self.model.firstSelections.count).randomElement()!
         secondSelection = (0..<self.model.secondSelections.count).randomElement()!
         thirdSelection = (0..<self.model.thirdSelections.count).randomElement()!
         
+    }
+    
+    func haptic() {
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+    }
+    
+    func showOverlay() {
+        OverlayUtil.shared.showOverlay(reason: .shaken)
     }
     
     private class MessageComposerDelegate: NSObject, MFMessageComposeViewControllerDelegate {
